@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get_http/views/home_page.dart';
+import 'package:get_http/views/home_page_statefull.dart';
+import 'package:get_http/views/home_page_stateless_future_builder.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Material App',
-      home: Scaffold(body: HomePage()),
+      home: Scaffold(body: HomePageStatelessFutureBuilder()),
     );
   }
 }
